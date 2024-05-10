@@ -13,6 +13,6 @@ jobs:
         run: echo $(date +%F_%H-%M-%S)
       - name: Download Sonar Scanner file
         run: |
-          curl -b -c -L -k --output CXCOMCL221100U_10-70007431.ZIP -u "kalwanimani007@gmail.com:Kr@tik@240423" " https://origin-az.softwaredownloads.sap.com/tokengen/?file=0020000000964892023"
+          curl -b -c -L -k --output CXCOMCL221100U_10-70007431.ZIP -u "kalwanimani007@gmail.com:M@nish2045" " https://origin-az.softwaredownloads.sap.com/tokengen/?file=0020000000964892023"
           ls -lhtr
       
