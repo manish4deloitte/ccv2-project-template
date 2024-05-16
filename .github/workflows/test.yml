@@ -11,8 +11,10 @@ jobs:
         uses: actions/checkout@v4
       - name: print current date and time
         run: echo $(date +%F_%H-%M-%S)
-      - name: Download Sonar Scanner file
-        run: |
-          curl -b -c -L -k --output CXCOMCL221100U_10-70007431.ZIP -u "kalwanimani007@gmail.com:M@nish2045" " https://origin-az.softwaredownloads.sap.com/tokengen/?file=0020000000964892023"
-          ls -lhtr
-      
+      - name: Setup node 20.12.2
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.12.2'
+
+      - name: Node version
+        run: node --version
